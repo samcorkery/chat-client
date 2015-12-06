@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 class Client{
-  public static void main(String args[]){
+  public static void main(String args[]) {
     System.out.println("// // //  ///////  //       ///////  //    //  ///////");
     System.out.println("// // //  //       //       //   //  ///  ///  //     ");
     System.out.println("// // //  ///////  //       //   //  // // //  ///////");
@@ -19,10 +19,10 @@ class Client{
     Send send = new Send();
     Recieve recieve = new Recieve();
     //output and input loop
-    while(true){
+    while(true) {
     System.out.print("::");
     input = k.nextLine();
-    if(input.length()>0){
+    if(input.length()>0) {
         send.send(name, input);
         System.out.println(recieve.getMessage());
     }
