@@ -23,7 +23,8 @@ class Client{
     System.out.print("::");
     input = k.nextLine();
     if(input.length()>0){
-        System.out.println(input);
+        send.send(name, input);
+        System.out.println(recieve.getMessage());
     }
   }
   }
