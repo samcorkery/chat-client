@@ -12,7 +12,7 @@ class Client{
         }
 
     //gets host name and port
-    String host = args[0];
+    String hostAddress = args[0];
     int port = Integer.parseInt(args[1]);
     
     
@@ -47,11 +47,10 @@ class Client{
         }      
     }
     } catch (UnknownHostException e) {
-            System.err.println("Don't know about host " + host);
+            System.err.println("The host " + host + " is not valid");
             System.exit(1);
         } catch (IOException e) {
-            System.err.println("Couldn't get I/O for the connection to " +
-                host);
+            System.err.println("Couldn't connect to " + host);
             System.exit(1);
         }        
     }
