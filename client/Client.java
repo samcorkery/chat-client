@@ -4,13 +4,6 @@ import java.util.Scanner;
 
 class Client{
   public static void main(String args[]) {
-
-    //prints a welcome message
-    System.out.println("// // //  ///////  //       ///////  //    //  ///////");
-    System.out.println("// // //  //       //       //   //  ///  ///  //     ");
-    System.out.println("// // //  ///////  //       //   //  // // //  ///////");
-    System.out.println("// // //  //       //       //   //  //    //  //     ");
-    System.out.println("////////  ///////  ///////  ///////  //    //  ///////");
     
     //gets host name and port
     String host = args[0];
