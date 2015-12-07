@@ -18,6 +18,7 @@ class Server {
 		ServerSocket serverSocket = new ServerSocket(port);
 		Socket client = serverSocket.accept();
 
+		//Makes input and output objects
 		PrintWriter out = new PrintWriter(client.getOutputStream(), true);
         BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
         ) {
